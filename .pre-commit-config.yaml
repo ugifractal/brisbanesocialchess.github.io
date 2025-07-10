@@ -33,3 +33,11 @@ repos:
     hooks:
       - id: oxipng
         args: ["--fix", "-o", "4", "--strip", "safe", "--alpha"]
+  - repo: local
+    hooks:
+      - id: test-lerna
+        name: test lerna
+        entry: ./scripts/test-lerna.sh
+        language: system
+        pass_filenames: false
+        require_serial: true
