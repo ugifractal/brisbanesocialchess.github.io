@@ -18,10 +18,12 @@ PRECOMMIT ?= pre-commit
 # Define the requirements file.
 REQUIREMENTS_FILE ?= requirements.txt
 
+CHESS_ANIMATION_SCRIPT = .github/workflows/scripts/chess_animation_2.py
+
 # --- Phony Targets ---
 # .PHONY declares targets that do not correspond to actual files.
 # This prevents issues if a file with the same name as a target exists.
-.PHONY: all setup install clean check format lint test docs help
+.PHONY: all setup install clean check format lint test docs help run-chess-animation
 
 # Default target when `make` is run without arguments.
 .DEFAULT_GOAL := help
@@ -97,6 +99,15 @@ docs: ## Build project documentation (e.g., Sphinx)
 	# Example: If using Sphinx, you might have:
 	# @source $(VENV_DIR)/bin/activate && sphinx-build docs/source docs/build
 	@echo "Documentation build command placeholder. Configure for your doc tool (e.g., Sphinx)."
+
+# ==============================================================================
+# Script Execution Targets
+# ==============================================================================
+
+run-chess-animation: $(VENV_DIR) ## Run the chess animation Python script
+	@echo "Running chess animation script..."
+	@. $(VENV_DIR)/bin/activate && $(PYTHON) $(CHESS_ANIMATION_SCRIPT)
+	@echo "Chess animation script finished."
 
 # ==============================================================================
 # Help Target
