@@ -120,6 +120,10 @@ ol {
 	margin-top: 0.5rem;
 }
 
+.section .bio {
+	text-align: center;
+}
+
 /* Buttons */
 .button-group {
 	display: flex;
