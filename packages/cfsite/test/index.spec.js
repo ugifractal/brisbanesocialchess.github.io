@@ -22,9 +22,10 @@ describe('Hello World worker', () => {
 describe('API endpoints', () => {
 	it('handles contact form submission', async () => {
 		const body = JSON.stringify({
-			email: 'alice@example.com',
-			message: 'Hello from contact form!',
 			name: 'Alice',
+			email: 'alice@example.com',
+			subject: 'Subject',
+			message: 'Hello from contact form!',
 		});
 
 		const request = new Request('http://example.com/api/contact', {
@@ -37,20 +38,21 @@ describe('API endpoints', () => {
 		const response = await worker.fetch(request, env, ctx);
 		await waitOnExecutionContext(ctx);
 
-		expect(await response.json()).toMatchInlineSnapshot(`
-      {
-        "message": "Thanks for contacting us!",
-        "status": "ok",
-      }
-    `);
+		expect(await response.json()).toEqual({
+			message: 'Thanks for contacting us!',
+			status: 'ok',
+		});
 		expect(response.headers.get('Access-Control-Allow-Origin')).toBeDefined();
 	});
 
 	it('handles user registration', async () => {
 		const body = JSON.stringify({
+			fname: '',
+			lname: '',
+			birthyear: '1990',
+			gender: 'male',
+			discordusername: '',
 			email: 'max@example.com',
-			password: 'secret123',
-			username: 'BaseMax',
 		});
 
 		const request = new Request('http://example.com/api/register', {
@@ -63,12 +65,10 @@ describe('API endpoints', () => {
 		const response = await worker.fetch(request, env, ctx);
 		await waitOnExecutionContext(ctx);
 
-		expect(await response.json()).toMatchInlineSnapshot(`
-      {
-        "message": "Registration complete!",
-        "status": "ok",
-      }
-    `);
+		expect(await response.json()).toEqual({
+			message: 'Registration complete!',
+			status: 'ok',
+		});
 		expect(response.headers.get('Access-Control-Allow-Origin')).toBeDefined();
 	});
 
