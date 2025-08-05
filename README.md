@@ -74,4 +74,26 @@ npx serve
 
 ---
 
+## Build the Docker image for running `pre-commit` easily
+
+```bash
+docker build -t my-go-precommit .
+or
+docker build --no-cache -t my-go-precommit .
+```
+
+And then:
+
+```bash
+docker run --rm -v "$PWD":/app -w /app my-go-precommit
+```
+
+Or if you want to run and keep the container and go into bash:
+
+```bash
+docker run -it -v "$PWD":/app -w /app my-go-precommit bash
+```
+
+---
+
 © 2025 Brisbane Social Chess
