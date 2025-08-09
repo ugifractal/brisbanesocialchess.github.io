@@ -420,13 +420,14 @@ form fieldset input[type='radio'] {
 	border-width: 3px;
 	border-style: solid;
 }
-.github-profile--big,
-.github-profile--big img.github-avatar {
-	width: 400px;
+.github-profile--big {
+	width: 500px;
 }
-.github-profile--medium,
-.github-profile--medium img.github-avatar {
-	width: 220px;
+.github-profile--medium {
+	width: 250px;
+}
+.github-profile--small {
+	width: 125px;
 }
 /* Meetups */
 .bio-img {
@@ -451,6 +452,15 @@ form fieldset input[type='radio'] {
 	.nav-links a {
 		padding: 0.5rem 0.8rem;
 		display: inline-block;
+	}
+	.github-profile--big {
+		width: 200px;
+	}
+	.github-profile--medium {
+		width: 150px;
+	}
+	.github-profile--small {
+		width: 100px;
 	}
 }
 
