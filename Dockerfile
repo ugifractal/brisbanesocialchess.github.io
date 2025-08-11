@@ -1,14 +1,14 @@
-FROM node:22.18.0-bullseye
+FROM node:22.18.0-bookworm
 
 ENV GO_VERSION=1.24.5
 ENV NODE_VERSION=22.18.0
+ENV PATH="/root/.local/bin:${PATH}"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     git \
     bash \
-    python3 \
-    python3-pip \
+    pipx \
     build-essential \
     ca-certificates \
     tar \
@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libstdc++6 \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install pre-commit
+RUN pipx install pre-commit
 
 RUN curl -LO https://mirrors.aliyun.com/golang/go${GO_VERSION}.linux-amd64.tar.gz && \
     tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz && \
@@ -24,7 +24,7 @@ RUN curl -LO https://mirrors.aliyun.com/golang/go${GO_VERSION}.linux-amd64.tar.g
 
 ENV PATH="/usr/local/go/bin:${PATH}"
 
-RUN go version && python3 --version && pip3 --version && node -v && npm -v
+RUN go version && pipx --version && node -v && npm -v
 
 WORKDIR /app
 COPY . .

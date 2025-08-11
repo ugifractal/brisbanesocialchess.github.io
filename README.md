@@ -142,14 +142,30 @@ npm run start
 
 ```bash
 docker build -t my-go-precommit .
+```
+
 or
+
+```bash
 docker build --no-cache -t my-go-precommit .
+```
+
+or On a Mac with an M2 chip:
+
+```bash
+docker build --platform=linux/amd64 -t my-go-precommit .
 ```
 
 And then:
 
 ```bash
 docker run --rm -v "$PWD":/app -w /app my-go-precommit
+```
+
+or On a Mac with an M2 chip:
+
+```bash
+docker run --platform=linux/amd64 --rm -v "$PWD":/app -w /app my-go-precommit
 ```
 
 Or if you want to run and keep the container and go into bash:
