@@ -4,15 +4,14 @@ layout: 'layouts/base.njk'
 title: Register for Membership | Brisbane Social Chess Club
 ---
 
-<section class="max-w-3xl mx-auto p-6 bg-black bg-opacity-60 rounded-xl shadow-lg flex flex-col gap-4">
+<section class="max-w-3xl mx-auto px-6 flex flex-col gap-4">
   <h2 class="text-center text-indigo-200 text-xl uppercase tracking-wide mt-2 mb-2">
     Register
   </h2>
   <p class="text-gray-300 text-sm">
     Please fill in the form below to join Brisbane Social Chess.
   </p>
-
-<form action="#" method="POST" class="flex flex-col gap-5" novalidate>
+  <form action="#" method="POST" class="flex flex-col gap-5" novalidate>
     <!-- First Name -->
     <div class="flex flex-col">
       <label for="firstName" class="text-gray-200 font-semibold mb-1">
