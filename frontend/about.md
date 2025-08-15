@@ -4,7 +4,7 @@ layout: 'layouts/base.njk'
 title: About Us | Brisbane Social Chess Club
 ---
 
-<section class="px-4 py-6 max-w-3xl mx-auto">
+<section class="px-4 py-6 max-w-3xl">
     <h2 class="text-center text-2xl font-semibold mb-4"><span aria-hidden="true">🏢</span> Who are we?</h2>
     <p class="text-white text-base leading-relaxed mb-6">
         Brisbane Social Chess is a not-for-profit organization in Queensland that promotes the game of chess through social gatherings
@@ -28,39 +28,39 @@ title: About Us | Brisbane Social Chess Club
     </ul>
 </section>
 
-<section class="px-4 py-6 max-w-3xl mx-auto">
+<section class="px-4 py-6 max-w-3xl">
     <h2 class="text-center text-2xl font-semibold mb-4"><span aria-hidden="true">👥</span> Management Committee</h2>
     <div class="overflow-x-auto">
-        <table class="w-full table-auto border-collapse min-w-[600px] text-white">
+        <table class="w-full table-auto border-collapse text-white">
             <thead>
                 <tr class="bg-[#261775] text-center">
-                    <th class="border px-4 py-2">Role</th>
+                    <th class="border px-4 py-2 w-[40px]">Role</th>
                     <th class="border px-4 py-2">Name</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th class="border px-4 py-2 text-left w-1/3">President</th>
+                    <th class="border px-4 py-2 text-left w-[40px]">President</th>
                     <td class="border px-4 py-2"><span class="role-board">Jimmy Joe</span></td>
                 </tr>
                 <tr>
-                    <th class="border px-4 py-2 text-left w-1/3">Treasurer</th>
+                    <th class="border px-4 py-2 text-left w-[40px]">Treasurer</th>
                     <td class="border px-4 py-2">
                         <a href="https://github.com/LuckyNotGood" class="role-board">Matt McLean</a>
                     </td>
                 </tr>
                 <tr>
-                    <th class="border px-4 py-2 text-left w-1/3">Secretary</th>
+                    <th class="border px-4 py-2 text-left w-[40px]">Secretary</th>
                     <td class="border px-4 py-2"><span class="role-board">Steve</span></td>
                 </tr>
                 <tr>
-                    <th class="border px-4 py-2 text-left w-1/3">Auditor</th>
+                    <th class="border px-4 py-2 text-left w-[40px]">Auditor</th>
                     <td class="border px-4 py-2">
                         <a href="https://github.com/garveybiz" class="role-board">Rob Garvey</a>
                     </td>
                 </tr>
                 <tr>
-                    <th class="border px-4 py-2 text-left w-1/3">General Members</th>
+                    <th class="border px-4 py-2 text-left w-[40px]">General Members</th>
                     <td class="border px-4 py-2">
                         <span class="role-board">Adam Lomsargis</span>, <span class="role-board">Ben M</span>,
                         <a href="https://github.com/jbampton" class="role-admin">John Bampton</a>
@@ -71,7 +71,7 @@ title: About Us | Brisbane Social Chess Club
     </div>
 </section>
 
-<section class="px-4 py-6 max-w-3xl mx-auto">
+<section class="px-4 py-6 max-w-3xl">
     <h2 class="text-center text-2xl font-semibold mb-4"><span aria-hidden="true">🧑🏽‍🎨</span> Organizers</h2>
     <ul class="list-disc list-inside text-white space-y-3">
         <li>
@@ -118,7 +118,7 @@ title: About Us | Brisbane Social Chess Club
 <h3 class="text-xl font-semibold mb-4"><span aria-hidden="true">🧑‍🔧</span> Maintainer</h3>
   <div class="flex justify-center mb-8">
     <a href="https://github.com/jbampton" class="flex flex-col items-center text-center">
-      <img class="w-32 h-32 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4" alt="jbampton avatar" />
+      <img class="w-35 h-70 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4" alt="jbampton avatar" />
       <span class="font-medium">John Bampton</span>
       <span class="text-gray-500">@jbampton</span>
     </a>
@@ -127,7 +127,7 @@ title: About Us | Brisbane Social Chess Club
 <h3 class="text-xl font-semibold mb-4"><span aria-hidden="true">💾</span> Developer</h3>
   <div class="flex justify-center mb-8">
     <a href="https://github.com/BaseMax" class="flex flex-col items-center text-center">
-      <img class="w-24 h-24 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/2658040?v=4" alt="Max Base avatar" />
+      <img class="w-50 h-50 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/2658040?v=4" alt="Max Base avatar" />
       <span class="font-medium">Max Base</span>
       <span class="text-gray-500">@BaseMax</span>
     </a>
@@ -140,77 +140,65 @@ title: About Us | Brisbane Social Chess Club
       <span class="font-medium">Abhushan Gautam</span>
       <span class="text-gray-500">@carefreeav09</span>
     </a>
-
     <a href="https://github.com/anufdo" class="flex flex-col items-center text-center w-24">
       <img class="w-20 h-20 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=125" alt="Anuradha Fernando avatar" />
       <span class="font-medium">Anuradha Fernando</span>
       <span class="text-gray-500">@anufdo</span>
     </a>
-
     <a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-24">
       <img class="w-20 h-20 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/43984189?v=4&s=125" alt="Ayush Rana avatar" />
       <span class="font-medium">Ayush Rana</span>
       <span class="text-gray-500">@ayushrana182</span>
     </a>
-
     <div class="flex flex-col items-center text-center w-24">
       <img class="w-20 h-20 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/583231?v=4&s=125" alt="Jasper avatar" />
       <span class="font-medium">Jasper</span>
       <span class="text-gray-500">N/A</span>
     </div>
-
     <a href="https://github.com/prio101" class="flex flex-col items-center text-center w-24">
     	<img class="w-20 h-20 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=125" alt="Mahabub Islam Prio avatar" />
     	<span class="font-medium">Mahabub Islam Prio</span>
     	<span class="text-gray-500">@prio101</span>
     </a>
-
     <a href="https://github.com/LuckyNotGood" class="flex flex-col items-center text-center w-24">
     	<img class="w-20 h-20 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/172946035?v=4&s=125" alt="Matt McLean avatar" />
     	<span class="font-medium">Matt McLean</span>
     	<span class="text-gray-500">@LuckyNotGood</span>
     </a>
-
     <a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-24">
     	<img class="w-20 h-20 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/87372623?v=4&s=125" alt="Mohammad Lotfi Akbarabadi avatar" />
     	<span class="font-medium">Mohammad Lotfi Akbarabadi</span>
     	<span class="text-gray-500">@mohammadlotfia</span>
     </a>
-
     <a href="https://github.com/udha" class="flex flex-col items-center text-center w-24">
-    	<img class="w-20 h-20 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=125" alt="Nicholas Meredith avatar" />
+    	<img class="w-20 h-20 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=125" alt="Nicholas Meredith avatar">
     	<span class="font-medium">Nicholas Meredith</span>
     	<span class="text-gray-500">@udha</span>
     </a>
-
     <a href="https://github.com/garveybiz" class="flex flex-col items-center text-center w-24">
     	<img class="w-20 h-20 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/7419130?v=4&s=125" alt="Rob Garvey avatar" />
     	<span class="font-medium">Rob Garvey</span>
     	<span class="text-gray-500">@garveybiz</span>
     </a>
-
     <a href="https://github.com/smriad" class="flex flex-col items-center text-center w-24">
     	<img class="w-20 h-20 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/21966124?v=4&s=125" alt="SM Riad avatar" />
     	<span class="font-medium">SM Riad</span>
     	<span class="text-gray-500">@smriad</span>
     </a>
-
     <a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-24">
     	<img class="w-20 h-20 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=125" alt="therealnugget avatar" />
     	<span class="font-medium">therealnugget</span>
     	<span class="text-gray-500">@therealnugget</span>
     </a>
-
     <a href="https://github.com/ugifractal" class="flex flex-col items-center text-center w-24">
     	<img class="w-20 h-20 rounded-full mb-2" src="https://avatars.githubusercontent.com/u/70807?v=4&s=125" alt="sugiarto avatar" />
     	<span class="font-medium">sugiarto</span>
     	<span class="text-gray-500">@ugifractal</span>
     </a>
-
-</div>
+  </div>
 </section>
 
-<section class="py-12">
+<section class="px-4">
     <h2 class="text-3xl font-bold mb-6"><span aria-hidden="true">🎲</span> Games that we play</h2>
     <ul class="list-disc pl-6 space-y-4">
         <li>
@@ -235,7 +223,7 @@ title: About Us | Brisbane Social Chess Club
     </ul>
 </section>
 
-<section class="py-12">
+<section class="px-4">
     <h2 class="text-3xl font-bold mb-6"><span aria-hidden="true">🕹️</span> New games recently delivered</h2>
     <ul class="list-disc pl-6 space-y-2">
         <li>
@@ -248,7 +236,7 @@ title: About Us | Brisbane Social Chess Club
     </ul>
 </section>
 
-<section class="py-12">
+<section class="px-4">
     <h2 class="text-3xl font-bold mb-6"><span aria-hidden="true">♣️</span> Games we might play in future</h2>
     <ul class="list-disc pl-6 space-y-2">
         <li><a href="https://en.wikipedia.org/wiki/Go_(game)" class="text-blue-600 hover:underline">Go</a> - at least one small Go set</li>
