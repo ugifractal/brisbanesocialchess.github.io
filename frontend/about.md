@@ -303,7 +303,7 @@ title: About Us | Brisbane Social Chess Club
 <section class="section">
 	<h2><span aria-hidden="true">📖</span> Chess books we recommend</h2>
 	<div class="table-responsive">
-		<table class="w-full border-collapse min-w-24 lg:min-w-[600px]">
+		<table class="w-full border-collapse lg:min-w-[600px]">
 			<thead>
 				<tr class="hidden lg:table-row">
 					<th scope="col" class="border border-[#ddd] p-[4px] bg-[#261775] text-white">Title</th>
