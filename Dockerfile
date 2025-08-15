@@ -13,10 +13,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     tar \
     xz-utils \
-    libstdc++6 \
-    && rm -rf /var/lib/apt/lists/*
-
-RUN pipx install pre-commit
+    libstdc++6 && \
+    rm -rf /var/lib/apt/lists/* && \
+    pipx install pre-commit
 
 RUN curl -LO https://mirrors.aliyun.com/golang/go${GO_VERSION}.linux-amd64.tar.gz && \
     tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz && \
