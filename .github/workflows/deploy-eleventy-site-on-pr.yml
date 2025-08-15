@@ -24,6 +24,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Build Tailwindcss
+        run: npm run tailwindcss:build
+
       - name: Build Eleventy site
         run: npm run build
 
