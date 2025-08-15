@@ -303,120 +303,122 @@ title: About Us | Brisbane Social Chess Club
 <section class="section">
 	<h2><span aria-hidden="true">📖</span> Chess books we recommend</h2>
 	<div class="table-responsive">
-		<table class="custom-table">
+		<table class="w-full border-collapse lg:min-w-[600px]">
 			<thead>
-				<tr>
-					<th scope="col">Title</th>
-					<th scope="col">Author(s)</th>
-					<th scope="col">Publisher</th>
+				<tr class="hidden lg:table-row">
+					<th scope="col" class="border border-[#ddd] p-[4px] bg-[#261775] text-white">Title</th>
+					<th scope="col" class="border border-[#ddd] p-[4px] bg-[#261775] text-white">Author(s)</th>
+					<th scope="col" class="border border-[#ddd] p-[4px] bg-[#261775] text-white">Publisher</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>
+				<tr class="flex flex-col lg:table-row">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">
 						<strong>101 Questions On How To Play Chess</strong>
 					</td>
-					<td><a href="http://www.fredwilsonchess.com/">Fred Wilson</a></td>
-					<td>Dover Game And Puzzle Activity Books</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><a href="http://www.fredwilsonchess.com/">Fred Wilson</a></td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Dover Game And Puzzle Activity Books</td>
 				</tr>
-				<tr>
-					<td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">
 						<strong>Bobby Fischer Teaches Chess</strong>
 					</td>
-					<td><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a>, Stuart Margulies, Donn Mosenfelder</td>
-					<td>Basic Systems Inc, Bantam Books</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a>, Stuart Margulies, Donn Mosenfelder</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Basic Systems Inc, Bantam Books</td>
 				</tr>
-				<tr>
-					<td><strong>Chess for Kids</strong>: How to Play and Win</td>
-					<td><a href="https://chesswithrichard.uk/">Richard James</a></td>
-					<td>Robinson; 2nd edition (2015)</td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><strong>Chess for Kids</strong>: How to Play and Win</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><a href="https://chesswithrichard.uk/">Richard James</a></td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Robinson; 2nd edition (2015)</td>
 				</tr>
-				<tr>
-					<td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">
 						<strong>Chess Openings For Dummies</strong>
 					</td>
-					<td><a href="https://en.wikipedia.org/wiki/James_Eade">James Eade</a></td>
-					<td>For Dummies</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><a href="https://en.wikipedia.org/wiki/James_Eade">James Eade</a></td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">For Dummies</td>
 				</tr>
-				<tr>
-					<td><strong>How Life Imitates Chess</strong>: Life's a Game. Play to Win.</td>
-					<td><a href="https://en.wikipedia.org/wiki/Garry_Kasparov">Garry Kasparov</a></td>
-					<td>Penguin Books (2021)</td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><strong>How Life Imitates Chess</strong>: Life's a Game. Play to Win.</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><a href="https://en.wikipedia.org/wiki/Garry_Kasparov">Garry Kasparov</a></td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Penguin Books (2021)</td>
 				</tr>
-				<tr>
-					<td><strong>How To Beat Your Dad At Chess</strong>: Including the 50 Deadly Checkmates</td>
-					<td><a href="https://en.wikipedia.org/wiki/Murray_Chandler">Murray Chandler</a></td>
-					<td>Gambit Publications Ltd</td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><strong>How To Beat Your Dad At Chess</strong>: Including the 50 Deadly Checkmates</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><a href="https://en.wikipedia.org/wiki/Murray_Chandler">Murray Chandler</a></td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Gambit Publications Ltd</td>
 				</tr>
-				<tr>
-					<td><strong>Learn Chess</strong>: A Gold-medal Winner Explains How to Play and Win at Chess</td>
-					<td><a href="https://en.wikipedia.org/wiki/John_Nunn">John Nunn</a></td>
-					<td>Gambit Publications Ltd</td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><strong>Learn Chess</strong>: A Gold-medal Winner Explains How to Play and Win at Chess</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><a href="https://en.wikipedia.org/wiki/John_Nunn">John Nunn</a></td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Gambit Publications Ltd</td>
 				</tr>
-				<tr>
-					<td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">
 						<strong>Learn Chess From The Greats</strong>
 					</td>
-					<td>Peter J. Tamburro, Jr.</td>
-					<td>Dover Publications</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Peter J. Tamburro, Jr.</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Dover Publications</td>
 				</tr>
-				<tr>
-					<td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">
 						<strong>Learn To Play Chess Like A Boss</strong>
 					</td>
-					<td><a href="https://en.wikipedia.org/wiki/Patrick_Wolff">Patrick Wolff</a></td>
-					<td>Penguin Random House Dorling Kindersley</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><a href="https://en.wikipedia.org/wiki/Patrick_Wolff">Patrick Wolff</a></td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Penguin Random House Dorling Kindersley</td>
 				</tr>
-				<tr>
-					<td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">
 						<strong>Modern Chess Openings: MC0-15</strong>
 					</td>
-					<td><a href="https://en.wikipedia.org/wiki/Nick_de_Firmian">Nick de Firmian</a></td>
-					<td>Random House Puzzles and Games</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><a href="https://en.wikipedia.org/wiki/Nick_de_Firmian">Nick de Firmian</a></td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Random House Puzzles and Games</td>
 				</tr>
-				<tr>
-					<td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">
 						<strong>MY 60 Memorable Games: Chess Tactics, Chess Strategies</strong>
 					</td>
-					<td><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a></td>
-					<td>Batsford GB</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a></td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Batsford GB</td>
 				</tr>
-				<tr>
-					<td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">
 						<strong>My System: Winning Chess Strategies</strong>
 					</td>
-					<td><a href="https://en.wikipedia.org/wiki/Aron_Nimzowitsch">Aron Nimzowitsch</a></td>
-					<td>SnowBall Publishing</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><a href="https://en.wikipedia.org/wiki/Aron_Nimzowitsch">Aron Nimzowitsch</a></td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">SnowBall Publishing</td>
 				</tr>
-				<tr>
-					<td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">
 						<strong>The Caro-Kann The Easy Way</strong>
 					</td>
-					<td>Thomas Engqvist</td>
-					<td>Batsford Chess</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Thomas Engqvist</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Batsford Chess</td>
 				</tr>
-				<tr>
-					<td><strong>The Chess Player's Bible</strong>: Illustrated Strategies For Staying Ahead Of The Game</td>
-					<td><a href="https://en.wikipedia.org/wiki/James_Eade">Eade</a> &amp; <a href="https://en.wikipedia.org/wiki/Al_Lawrence_(chess_writer)">Lawrence</a></td>
-					<td>Apple Press A Quarto Book</td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><strong>The Chess Player's Bible</strong>: Illustrated Strategies For Staying Ahead Of The Game</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><a href="https://en.wikipedia.org/wiki/James_Eade">Eade</a> &amp; <a href="https://en.wikipedia.org/wiki/Al_Lawrence_(chess_writer)">Lawrence</a></td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Apple Press A Quarto Book</td>
 				</tr>
-				<tr>
-					<td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">
 						<strong>The Life and Games of Mikhail Tal</strong>
 					</td>
-					<td><a href="https://en.wikipedia.org/wiki/Mikhail_Tal">Mikhail Tal</a></td>
-					<td>Everyman Chess</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]"><a href="https://en.wikipedia.org/wiki/Mikhail_Tal">Mikhail Tal</a></td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Everyman Chess</td>
 				</tr>
-				<tr>
-					<td>
+				<tr class="flex flex-col lg:table-row mt-2 lg:mt-0">
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">
 						<strong>The Usborne Complete Book of Chess</strong>
 					</td>
-					<td>Elizabeth Dalby</td>
-					<td>Usborne Publishing Ltd</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Elizabeth Dalby</td>
+					<td class="w-full lg:w-auto border border-[#ddd] p-[4px]">Usborne Publishing Ltd</td>
 				</tr>
-			</tbody>
-		</table>
-	</div>
+
+    		</tbody>
+    	</table>
+    </div>
+
 </section>
 <section class="section">
 	<h2><span aria-hidden="true">🏨</span> Royal Hotel — A Quick Game is a Good Game</h2>
