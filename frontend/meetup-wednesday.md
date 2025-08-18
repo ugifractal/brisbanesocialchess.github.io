@@ -18,8 +18,12 @@ title: Wednesday Lunchtime Chess Meetup | Brisbane Social Chess Club
     />
   </div>
   <p class="text-sm leading-relaxed">
-    Welcome to Wednesday chess at June's cafe. Good food, coffee and company. We usually expect 6 or more participants. <br/>
-    Come if you are available. Parking available across the road, on street or at the Mowbray Park ferry. <br/>
+    Welcome to Wednesday chess at June's cafe. Good food, coffee and company. We usually expect 6 or more participants.
+  </p>
+  <p class="text-sm leading-relaxed">
+    Come if you are available. Parking available across the road, on street or at the Mowbray Park ferry.
+  </p>
+  <p class="text-sm leading-relaxed">
     If you wish to come by ferry, it is a 5 minutes' walk to June's.
   </p>
   <p class="text-gray-200 text-sm"><strong>Time:</strong> 12:00 PM – 2:30 PM AEST</p>
