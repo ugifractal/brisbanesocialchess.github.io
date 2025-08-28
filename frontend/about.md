@@ -120,76 +120,84 @@ title: About Us | Brisbane Social Chess Club
 </section>
 
 <section class="px-4 max-w-3xl text-center">
-  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🛠️</span> GitHub Team</h2>
-  <h3 class="text-xl font-semibold mb-4"><span aria-hidden="true">🧑‍🔧</span> Maintainer</h3>
-  <div class="flex justify-center mb-8">
-    <a href="https://github.com/jbampton" class="flex flex-col items-center text-center">
-      <img class="w-[420px] h-[420px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4&s=420" alt="jbampton avatar" />
-      <span class="font-medium">John Bampton</span>
-      <span class="text-gray-500">@jbampton</span>
-    </a>
-  </div>
-  <h3 class="text-xl font-semibold mb-4"><span aria-hidden="true">💾</span> Developers</h3>
-  <div class="flex flex-wrap justify-center items-end gap-6 mb-8">
-    <a href="https://github.com/BaseMax" class="flex flex-col items-center text-center">
-      <img class="w-[225px] h-[225px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=225" alt="Max Base avatar" />
-      <span class="font-medium">Max Base</span>
-      <span class="text-gray-500">@BaseMax</span>
-    </a>
-    <a href="https://github.com/anufdo" class="flex flex-col items-center text-center">
-      <img class="w-[150px] h-[150px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=150" alt="Anuradha Fernando avatar" />
-      <span class="font-medium">Anuradha Fernando</span>
-      <span class="text-gray-500">@anufdo</span>
-    </a>
-    <a href="https://github.com/ugifractal" class="flex flex-col items-center text-center">
-      <img class="w-[150px] h-[150px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/70807?v=4&s=150" alt="sugiarto avatar" />
-      <span class="font-medium">sugiarto</span>
-      <span class="text-gray-500">@ugifractal</span>
-    </a>
-  </div>
-  <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🎮</span> Discord Moderators</h2>
-  <div class="flex flex-wrap justify-center gap-6">
-    <a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center w-33">
-      <img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/10443785?v=4&s=95" alt="Abhushan Gautam avatar" />
-      <span class="font-medium">Abhushan Gautam</span>
-      <span class="text-gray-500">@carefreeav09</span>
-    </a>
-    <a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-33">
-      <img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/43984189?v=4&s=95" alt="Ayush Rana avatar" />
-      <span class="font-medium">Ayush Rana</span>
-      <span class="text-gray-500">@ayushrana182</span>
-    </a>
-    <div class="flex flex-col items-center text-center w-33">
-      <img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/583231?v=4&s=95" alt="Jasper avatar" />
-      <span class="font-medium">Jasper</span>
-      <span class="text-gray-500">N/A</span>
-    </div>
-    <a href="https://github.com/prio101" class="flex flex-col items-center text-center w-33">
-    	<img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=95" alt="Mahabub Islam Prio avatar" />
-    	<span class="font-medium">Mahabub Islam Prio</span>
-    	<span class="text-gray-500">@prio101</span>
-    </a>
-    <a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-33">
-    	<img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/87372623?v=4&s=95" alt="Mohammad Lotfi Akbarabadi avatar" />
-    	<span class="font-medium">Mohammad Lotfi Akbarabadi</span>
-    	<span class="text-gray-500">@mohammadlotfia</span>
-    </a>
-    <a href="https://github.com/udha" class="flex flex-col items-center text-center w-33">
-    	<img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=95" alt="Nicholas Meredith avatar">
-    	<span class="font-medium">Nicholas Meredith</span>
-    	<span class="text-gray-500">@udha</span>
-    </a>
-    <a href="https://github.com/smriad" class="flex flex-col items-center text-center w-33">
-    	<img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/21966124?v=4&s=95" alt="SM Riad avatar" />
-    	<span class="font-medium">SM Riad</span>
-    	<span class="text-gray-500">@smriad</span>
-    </a>
-    <a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-33">
-    	<img class="w-[120px] h-[120px] rounded-full mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
-    	<span class="font-medium">Thomas</span>
-    	<span class="text-gray-500">@therealnugget</span>
-    </a>
-  </div>
+	<h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+		<span aria-hidden="true">🛠️</span> GitHub Team
+	</h2>
+	<h3 class="text-xl font-semibold mb-4">
+		<span aria-hidden="true">🧑‍🔧</span> Maintainer
+	</h3>
+	<div class="flex justify-center mb-8">
+		<a href="https://github.com/jbampton" class="flex flex-col items-center text-center">
+			<img class="w-40 md:w-60 lg:w-[420px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/418747?v=4&s=420" alt="jbampton avatar" />
+			<span class="font-medium">John Bampton</span>
+			<span class="text-gray-500">@jbampton</span>
+		</a>
+	</div>
+	<h3 class="text-xl font-semibold mb-4">
+		<span aria-hidden="true">💾</span> Developers
+	</h3>
+	<div class="flex flex-wrap justify-center items-end gap-6 mb-8">
+		<a href="https://github.com/BaseMax" class="flex flex-col items-center text-center">
+			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/2658040?v=4&s=225" alt="Max Base avatar" />
+			<span class="font-medium">Max Base</span>
+			<span class="text-gray-500">@BaseMax</span>
+		</a>
+		<a href="https://github.com/anufdo" class="flex flex-col items-center text-center">
+			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/8244245?v=4&s=225" alt="Anuradha Fernando avatar" />
+			<span class="font-medium">Anuradha Fernando</span>
+			<span class="text-gray-500">@anufdo</span>
+		</a>
+		<a href="https://github.com/ugifractal" class="flex flex-col items-center text-center">
+			<img class="w-32 md:w-40 lg:w-[225px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/70807?v=4&s=225" alt="sugiarto avatar" />
+			<span class="font-medium">sugiarto</span>
+			<span class="text-gray-500">@ugifractal</span>
+		</a>
+	</div>
+	<h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3">
+		<span aria-hidden="true">🎮</span> Discord Moderators
+	</h2>
+	<div class="flex flex-wrap justify-center gap-6">
+		<a href="https://github.com/carefreeav09" class="flex flex-col items-center text-center">
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/10443785?v=4&s=120" alt="Abhushan Gautam avatar" />
+			<span class="font-medium">Abhushan Gautam</span>
+			<span class="text-gray-500">@carefreeav09</span>
+		</a>
+		<a href="https://github.com/ayushrana182" class="flex flex-col items-center text-center w-33">
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/43984189?v=4&s=95" alt="Ayush Rana avatar" />
+			<span class="font-medium">Ayush Rana</span>
+			<span class="text-gray-500">@ayushrana182</span>
+		</a>
+		<div class="flex flex-col items-center text-center w-33">
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/583231?v=4&s=95" alt="Jasper avatar" />
+			<span class="font-medium">Jasper</span>
+			<span class="text-gray-500">N/A</span>
+		</div>
+		<a href="https://github.com/prio101" class="flex flex-col items-center text-center w-33">
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=95" alt="Mahabub Islam Prio avatar" />
+			<span class="font-medium">Mahabub Islam Prio</span>
+			<span class="text-gray-500">@prio101</span>
+		</a>
+		<a href="https://github.com/mohammadlotfia" class="flex flex-col items-center text-center w-33">
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/87372623?v=4&s=95" alt="Mohammad Lotfi Akbarabadi avatar" />
+			<span class="font-medium">Mohammad Lotfi Akbarabadi</span>
+			<span class="text-gray-500">@mohammadlotfia</span>
+		</a>
+		<a href="https://github.com/udha" class="flex flex-col items-center text-center w-33">
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/1697199?v=4&s=95" alt="Nicholas Meredith avatar" />
+			<span class="font-medium">Nicholas Meredith</span>
+			<span class="text-gray-500">@udha</span>
+		</a>
+		<a href="https://github.com/smriad" class="flex flex-col items-center text-center w-33">
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/21966124?v=4&s=95" alt="SM Riad avatar" />
+			<span class="font-medium">SM Riad</span>
+			<span class="text-gray-500">@smriad</span>
+		</a>
+		<a href="https://github.com/therealnugget" class="flex flex-col items-center text-center w-33">
+			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/83858713?v=4&s=95" alt="therealnugget avatar" />
+			<span class="font-medium">Thomas</span>
+			<span class="text-gray-500">@therealnugget</span>
+		</a>
+	</div>
 </section>
 
 <section class="px-4 max-w-3xl">
@@ -253,41 +261,41 @@ title: About Us | Brisbane Social Chess Club
             <tbody>
                 <tr>
                     <td class="border px-4 py-2"><strong>101 Questions On How To Play Chess</strong></td>
-                    <td class="border px-4 py-2"><a href="https://www.fredwilsonchess.com/">Fred Wilson</a></td>
+                    <td class="border px-4 py-2"><a class="text-blue-400 hover:underline" href="https://www.fredwilsonchess.com/">Fred Wilson</a></td>
                     <td class="border px-4 py-2">Dover Game And Puzzle Activity Books</td>
                 </tr>
                 <tr>
                     <td class="border px-4 py-2">
                         <strong>Bobby Fischer Teaches Chess</strong>
                     </td>
-                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a>, Stuart Margulies, Donn Mosenfelder</td>
+                    <td class="border px-4 py-2"><a class="text-blue-400 hover:underline" href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a>, Stuart Margulies, Donn Mosenfelder</td>
                     <td class="border px-4 py-2">Basic Systems Inc, Bantam Books</td>
                 </tr>
                 <tr>
                     <td class="border px-4 py-2"><strong>Chess for Kids</strong>: How to Play and Win</td>
-                    <td class="border px-4 py-2"><a href="https://chesswithrichard.uk/">Richard James</a></td>
+                    <td class="border px-4 py-2"><a class="text-blue-400 hover:underline" href="https://chesswithrichard.uk/">Richard James</a></td>
                     <td class="border px-4 py-2">Robinson; 2nd edition (2015)</td>
                 </tr>
                 <tr>
                     <td class="border px-4 py-2">
                         <strong>Chess Openings For Dummies</strong>
                     </td>
-                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/James_Eade">James Eade</a></td>
+                    <td class="border px-4 py-2"><a class="text-blue-400 hover:underline" href="https://en.wikipedia.org/wiki/James_Eade">James Eade</a></td>
                     <td class="border px-4 py-2">For Dummies</td>
                 </tr>
                 <tr>
                     <td class="border px-4 py-2"><strong>How Life Imitates Chess</strong>: Life's a Game. Play to Win.</td>
-                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Garry_Kasparov">Garry Kasparov</a></td>
+                    <td class="border px-4 py-2"><a class="text-blue-400 hover:underline" href="https://en.wikipedia.org/wiki/Garry_Kasparov">Garry Kasparov</a></td>
                     <td class="border px-4 py-2">Penguin Books (2021)</td>
                 </tr>
                 <tr>
                     <td class="border px-4 py-2"><strong>How To Beat Your Dad At Chess</strong>: Including the 50 Deadly Checkmates</td>
-                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Murray_Chandler">Murray Chandler</a></td>
+                    <td class="border px-4 py-2"><a class="text-blue-400 hover:underline" href="https://en.wikipedia.org/wiki/Murray_Chandler">Murray Chandler</a></td>
                     <td class="border px-4 py-2">Gambit Publications Ltd</td>
                 </tr>
                 <tr>
                     <td class="border px-4 py-2"><strong>Learn Chess</strong>: A Gold-medal Winner Explains How to Play and Win at Chess</td>
-                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/John_Nunn">John Nunn</a></td>
+                    <td class="border px-4 py-2"><a class="text-blue-400 hover:underline" href="https://en.wikipedia.org/wiki/John_Nunn">John Nunn</a></td>
                     <td class="border px-4 py-2">Gambit Publications Ltd</td>
                 </tr>
                 <tr>
@@ -301,47 +309,47 @@ title: About Us | Brisbane Social Chess Club
                     <td class="border px-4 py-2">
                         <strong>Learn To Play Chess Like A Boss</strong>
                     </td>
-                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Patrick_Wolff">Patrick Wolff</a></td>
+                    <td class="border px-4 py-2"><a class="text-blue-400 hover:underline" href="https://en.wikipedia.org/wiki/Patrick_Wolff">Patrick Wolff</a></td>
                     <td class="border px-4 py-2">Penguin Random House Dorling Kindersley</td>
                 </tr>
                 <tr>
                     <td class="border px-4 py-2">
                         <strong>Modern Chess Openings: MC0-15</strong>
                     </td>
-                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Nick_de_Firmian">Nick de Firmian</a></td>
+                    <td class="border px-4 py-2"><a class="text-blue-400 hover:underline" href="https://en.wikipedia.org/wiki/Nick_de_Firmian">Nick de Firmian</a></td>
                     <td class="border px-4 py-2">Random House Puzzles and Games</td>
                 </tr>
                 <tr>
                     <td class="border px-4 py-2">
                         <strong>MY 60 Memorable Games: Chess Tactics, Chess Strategies</strong>
                     </td>
-                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a></td>
+                    <td class="border px-4 py-2"><a class="text-blue-400 hover:underline" href="https://en.wikipedia.org/wiki/Bobby_Fischer">Bobby Fischer</a></td>
                     <td class="border px-4 py-2">Batsford GB</td>
                 </tr>
                 <tr>
                     <td class="border px-4 py-2">
                         <strong>My System: Winning Chess Strategies</strong>
                     </td>
-                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Aron_Nimzowitsch">Aron Nimzowitsch</a></td>
+                    <td class="border px-4 py-2"><a class="text-blue-400 hover:underline" href="https://en.wikipedia.org/wiki/Aron_Nimzowitsch">Aron Nimzowitsch</a></td>
                     <td class="border px-4 py-2">SnowBall Publishing</td>
                 </tr>
                 <tr>
                     <td class="border px-4 py-2">
                         <strong>The Caro-Kann The Easy Way</strong>
                     </td>
-                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Thomas_Engqvist">Thomas Engqvist</a></td>
+                    <td class="border px-4 py-2"><a class="text-blue-400 hover:underline" href="https://en.wikipedia.org/wiki/Thomas_Engqvist">Thomas Engqvist</a></td>
                     <td class="border px-4 py-2">Batsford Chess</td>
                 </tr>
                 <tr>
                     <td class="border px-4 py-2"><strong>The Chess Player's Bible</strong>: Illustrated Strategies For Staying Ahead Of The Game</td>
-                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/James_Eade">James Eade</a> &amp; <a href="https://en.wikipedia.org/wiki/Al_Lawrence_(chess_writer)">Al Lawrence</a></td>
+                    <td class="border px-4 py-2"><a class="text-blue-400 hover:underline" href="https://en.wikipedia.org/wiki/James_Eade">James Eade</a> &amp; <a class="text-blue-400 hover:underline" href="https://en.wikipedia.org/wiki/Al_Lawrence_(chess_writer)">Al Lawrence</a></td>
                     <td class="border px-4 py-2">Apple Press A Quarto Book</td>
                 </tr>
                 <tr>
                     <td class="border px-4 py-2">
                         <strong>The Life and Games of Mikhail Tal</strong>
                     </td>
-                    <td class="border px-4 py-2"><a href="https://en.wikipedia.org/wiki/Mikhail_Tal">Mikhail Tal</a></td>
+                    <td class="border px-4 py-2"><a class="text-blue-400 hover:underline" href="https://en.wikipedia.org/wiki/Mikhail_Tal">Mikhail Tal</a></td>
                     <td class="border px-4 py-2">Everyman Chess</td>
                 </tr>
                 <tr>
@@ -360,7 +368,10 @@ title: About Us | Brisbane Social Chess Club
     <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">🏨</span> Royal Hotel - A Quick Game is a Good Game</h2>
     <figure>
         <a href="{{ '/assets/images/standard-4-player-chess.jpg' | url }}">
-            <img src="{{ '/assets/images/standard-4-player-chess.jpg' | url }}" alt="Standard 4 Player Chess" />
+            <img
+                class="w-full h-auto rounded-lg object-contain"
+                src="{{ '/assets/images/standard-4-player-chess.jpg' | url }}"
+                alt="Standard 4 Player Chess" />
         </a>
     </figure>
 </section>
@@ -370,6 +381,7 @@ title: About Us | Brisbane Social Chess Club
     <figure>
         <a href="{{ '/assets/images/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}">
             <img
+                class="w-full h-auto rounded-lg object-contain"
                 src="{{ '/assets/images/harmegedo-the-board-of-lords-at-the-garden-room.jpg' | url }}"
                 alt="Harmegedo The Board of Lords at the Garden Room"
             />
@@ -382,12 +394,14 @@ title: About Us | Brisbane Social Chess Club
     <div class="flex gap-4">
         <a href="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}">
             <img
+                class="w-full h-auto rounded-lg object-contain"
                 src="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-1.jpg' | url }}"
                 alt="A yellow character resembling Big Bird dressed as a Jedi Master, looking at a chess board."
             />
         </a>
         <a href="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg' | url }}">
             <img
+                class="w-full h-auto rounded-lg object-contain"
                 src="{{ '/assets/images/never-underestimate-the-power-of-jedi-master-big-bird-2.jpg' | url }}"
                 alt="Another view of Jedi Master Big Bird playing chess."
             />
@@ -399,16 +413,28 @@ title: About Us | Brisbane Social Chess Club
     <h2 class="text-center text-xl md:text-2xl font-semibold text-indigo-200 mb-3"><span aria-hidden="true">4️⃣</span> Garden Room - Quaternity Zombie Road Block</h2>
     <div class="grid grid-cols-2 gap-4">
         <a href="{{ '/assets/images/quaternity-1.png' | url }}">
-            <img src="{{ '/assets/images/quaternity-1.png' | url }}" alt="Quaternity board with pieces in starting position." />
+            <img
+                class="w-full h-auto rounded-lg object-contain"
+                src="{{ '/assets/images/quaternity-1.png' | url }}" alt="Quaternity board with pieces in starting position."
+            />
         </a>
         <a href="{{ '/assets/images/quaternity-2.png' | url }}">
-            <img src="{{ '/assets/images/quaternity-2.png' | url }}" alt="Close-up of Quaternity game in progress." />
+            <img
+                class="w-full h-auto rounded-lg object-contain"
+                src="{{ '/assets/images/quaternity-2.png' | url }}" alt="Close-up of Quaternity game in progress."
+            />
         </a>
         <a href="{{ '/assets/images/quaternity-3.png' | url }}">
-            <img src="{{ '/assets/images/quaternity-3.png' | url }}" alt="A different view of a Quaternity game in progress." />
+            <img
+                class="w-full h-auto rounded-lg object-contain"
+                src="{{ '/assets/images/quaternity-3.png' | url }}" alt="A different view of a Quaternity game in progress."
+            />
         </a>
         <a href="{{ '/assets/images/quaternity-4.png' | url }}">
-            <img src="{{ '/assets/images/quaternity-4.png' | url }}" alt="The Quaternity game box and components." />
+            <img
+                class="w-full h-auto rounded-lg object-contain"
+                src="{{ '/assets/images/quaternity-4.png' | url }}" alt="The Quaternity game box and components."
+            />
         </a>
     </div>
 </section>
