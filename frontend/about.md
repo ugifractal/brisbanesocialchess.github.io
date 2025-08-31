@@ -88,7 +88,7 @@ title: About Us | Brisbane Social Chess Club
     <ul class="list-disc list-inside text-white space-y-3">
         <li>
             <strong>Organizer</strong>: <a href="https://github.com/LuckyNotGood" class="hover:underline role-board text-role-board">Matt McLean</a>: "A good player is always lucky" -
-            <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca" class="underline text-blue-400">Capablanca</a>
+            <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca" class="hover:underline text-blue-400">Capablanca</a>
         </li>
         <li>
             <strong>Co-organizers</strong>:
@@ -100,7 +100,7 @@ title: About Us | Brisbane Social Chess Club
                 <li><span class="role-board text-role-board">Ben M</span>: How does the horsey move again? <span aria-hidden="true">🤔</span></li>
                 <li><span class="role-board text-role-board">Jimmy Joe</span></li>
                 <li>
-                    <a href="https://github.com/garveybiz" class="role-board text-role-board">Rob Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
+                    <a href="https://github.com/garveybiz" class="hover:underline role-board text-role-board">Robert Garvey</a>: Welcome to Brisbane Social Chess. Come along and play with us, let us know your ideas, and help us organize future events.
                 </li>
                 <li><span class="role-board text-role-board">Steve</span>: Official pawn wrangler.</li>
                 <li><span class="text-role-co-organizers text-[#2196f3]">the Prof</span></li>
@@ -173,7 +173,7 @@ title: About Us | Brisbane Social Chess Club
 		<div class="flex flex-col items-center text-center w-1/3 role-leader text-role-leader">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/583231?v=4&s=95" alt="Jasper avatar" />
 			<span class="font-medium">Jasper</span>
-			<span class="text-gray-500">N/A</span>
+			<span class="text-gray-500 github">N/A</span>
 		</div>
 		<a href="https://github.com/prio101" class="flex flex-col items-center text-center w-1/3 role-moderator text-role-moderator">
 			<img class="w-20 md:w-28 lg:w-[120px] aspect-square rounded-full object-cover mb-2" src="https://avatars.githubusercontent.com/u/3279809?v=4&s=95" alt="Mahabub Islam Prio avatar" />
