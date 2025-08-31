@@ -14,6 +14,7 @@
 	--color-role-developer: #00ffff;
 	--color-role-moderator: yellow;
 	--color-role-board: #ed7014;
+	--color-role-leader: orange;
 	--color-role-coordinator: #a020f0;
 	--color-role-co-organizers: #2196f3;
 	--color-role-lead-developer: #ff0001;
@@ -33,6 +34,9 @@
 .role-board img {
 	border: var(--border-solid-2px) var(--color-role-board);
 }
+.role-leader img {
+	border: var(--border-solid-2px) var(--color-role-leader);
+}
 .role-coordinator img {
 	border: var(--border-solid-2px) var(--color-role-coordinator);
 }
@@ -47,4 +51,35 @@
 }
 .role-assistant-organizers img {
 	border: var(--border-solid-2px) var(--color-role-assistant-organizers);
+}
+
+.role-admin .github {
+	color: var(--color-role-admin);
+}
+.role-developer .github {
+	color: var(--color-role-developer);
+}
+.role-moderator .github {
+	color: var(--color-role-moderator);
+}
+.role-board .github {
+	color: var(--color-role-board);
+}
+.role-leader .github {
+	color: var(--color-role-leader);
+}
+.role-coordinator .github {
+	color: var(--color-role-coordinator);
+}
+.role-co-organizers .github {
+	color: var(--color-role-co-organizers);
+}
+.role-lead-developer .github {
+	color: var(--color-role-lead-developer);
+}
+.role-event-organizers .github {
+	color: var(--color-role-event-organizers);
+}
+.role-assistant-organizers .github {
+	color: var(--color-role-assistant-organizers);
 }
