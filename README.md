@@ -144,8 +144,8 @@ pre-commit run --all-files
 
 ```bash
 mkdir docker_data
-docker build -t ubuntu-pre-commit .
-docker run -it -v "$PWD":/app -v "$PWD/docker_data/.cache/pre-commit":/root/.cache/pre-commit -v "$PWD/docker_data/.npm":/root/.npm -w /app ubuntu-pre-commit bash
+docker buildx build --platform=linux/amd64 -t ubuntu-pre-commit .
+docker run --platform=linux/amd64 -it -v "$PWD":/app -v "$PWD/docker_data/.cache/pre-commit":/root/.cache/pre-commit -v "$PWD/docker_data/.npm":/root/.npm -w /app ubuntu-pre-commit:latest bash
 pre-commit run --all-files
 ```
 

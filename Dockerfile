@@ -22,7 +22,6 @@ RUN apt update && apt install -y --no-install-recommends \
     libsqlite3-dev \
     libncurses5-dev \
     libncursesw5-dev \
-    xz-utils \
     liblzma-dev \
     tk-dev \
     libffi-dev \
@@ -32,7 +31,7 @@ RUN apt update && apt install -y --no-install-recommends \
     libstdc++6 && \
     rm -rf /var/lib/apt/lists/*
 
-RUN curl -LO https://mirrors.aliyun.com/golang/go${GO_VERSION}.linux-arm64.tar.gz && \
+RUN curl -LO https://mirrors.aliyun.com/golang/go${GO_VERSION}.linux-${TARGETARCH}.tar.gz && \
     tar -C /usr/local -xzf go${GO_VERSION}.linux-arm64.tar.gz && \
     rm go${GO_VERSION}.linux-arm64.tar.gz
 
