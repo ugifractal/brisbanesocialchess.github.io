@@ -53,7 +53,7 @@ This website is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern a
     - [Start Development Server](#start-development-server)
     - [Run Tests](#run-tests)
   - [Getting Started / Building the Site](#getting-started--building-the-site)
-  - [Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
+  - [Running `pre-commit` using Docker](#running-pre-commit-using-docker)
   - [Build the Documentation](#build-the-documentation)
 - [Contributors](#contributors)
 
@@ -129,44 +129,24 @@ npm run tailwindcss:watch & npm run start
 
 ---
 
-### Build the Docker image for running `pre-commit` easily
+### Running `pre-commit` using Docker
 
-- Standard build:
+- Arm 64:
 
 ```bash
-docker build -t my-go-precommit .
+mkdir docker_data
+docker buildx build --platform=linux/arm64 -t ubuntu-pre-commit .
+docker run --platform=linux/arm64 -it -v "$PWD":/app -v "$PWD/docker_data/.cache/pre-commit":/root/.cache/pre-commit -v "$PWD/docker_data/.npm":/root/.npm -w /app ubuntu-pre-commit:latest bash
+pre-commit run --all-files
 ```
 
-- Build without cache:
+- Amd 64:
 
 ```bash
-docker build --no-cache -t my-go-precommit .
-```
-
-- On a Mac with an M2 chip:
-
-```bash
-docker build --platform=linux/amd64 -t my-go-precommit .
-```
-
-And then:
-
-- Standard build:
-
-```bash
-docker run --rm -v "$PWD":/app -w /app my-go-precommit
-```
-
-Or if you want to run and keep the container and go into bash:
-
-```bash
-docker run -it -v "$PWD":/app -w /app my-go-precommit bash
-```
-
-- On a Mac with an M2 chip:
-
-```bash
-docker run --platform=linux/amd64 --rm -v "$PWD":/app -w /app my-go-precommit
+mkdir docker_data
+docker build -t ubuntu-pre-commit .
+docker run -it -v "$PWD":/app -v "$PWD/docker_data/.cache/pre-commit":/root/.cache/pre-commit -v "$PWD/docker_data/.npm":/root/.npm -w /app ubuntu-pre-commit bash
+pre-commit run --all-files
 ```
 
 ---
