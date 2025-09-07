@@ -1,5 +1,7 @@
 FROM ubuntu:24.04
 
+ARG TARGETARCH
+
 ENV GO_VERSION=1.24.5
 ENV NODE_VERSION=22.18.0
 ENV PYENV_ROOT="/root/.pyenv"
@@ -32,8 +34,8 @@ RUN apt update && apt install -y --no-install-recommends \
     rm -rf /var/lib/apt/lists/*
 
 RUN curl -LO https://mirrors.aliyun.com/golang/go${GO_VERSION}.linux-${TARGETARCH}.tar.gz && \
-    tar -C /usr/local -xzf go${GO_VERSION}.linux-arm64.tar.gz && \
-    rm go${GO_VERSION}.linux-arm64.tar.gz
+    tar -C /usr/local -xzf go${GO_VERSION}.linux-${TARGETARCH}.tar.gz && \
+    rm go${GO_VERSION}.linux-${TARGETARCH}.tar.gz
 
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y \
     && . "$HOME/.cargo/env" \
@@ -47,11 +49,9 @@ ENV PATH="/usr/local/go/bin:${PATH}"
 
 RUN git clone https://github.com/pyenv/pyenv.git /root/.pyenv
 
-RUN pyenv install 3.11 && pyenv local 3.11 && pip install pre-commit pylint
-RUN pyenv install 3.12 && pyenv local 3.12 && pip install pre-commit pylint
-RUN pyenv install 3.13 && pyenv local 3.13 && pip install pre-commit pylint
-
-
+RUN pyenv install 3.11 && pyenv local 3.11 && pip install pre-commit pylint && \
+    pyenv install 3.12 && pyenv local 3.12 && pip install pre-commit pylint && \
+    pyenv install 3.13 && pyenv local 3.13 && pip install pre-commit pylint
 
 RUN mkdir $NVM_DIR && \
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash && \
