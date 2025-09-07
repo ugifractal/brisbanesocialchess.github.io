@@ -37,21 +37,38 @@ RUN curl -LO https://mirrors.aliyun.com/golang/go${GO_VERSION}.linux-${TARGETARC
     tar -C /usr/local -xzf go${GO_VERSION}.linux-${TARGETARCH}.tar.gz && \
     rm go${GO_VERSION}.linux-${TARGETARCH}.tar.gz
 
+
+RUN mkdir -p /app && \
+    mkdir -p /home/appuser && \
+    groupadd -r -g 1001 appuser && \
+    useradd -r -u 1001 -g 1001 -d /home/appuser -s /bin/bash appuser && \
+    chown -R appuser:appuser /home/appuser && \
+    chown -R appuser:appuser /app
+
+WORKDIR /app
+USER appuser
+ENV HOME=/home/appuser
+
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y \
     && . "$HOME/.cargo/env" \
     && rustup install stable \
     && rustup default stable
 
-ENV PATH="/root/.cargo/bin:${PATH}"
+ENV PATH="$HOME/.cargo/bin:${PATH}"
 RUN cargo install oxipng --locked
 
 ENV PATH="/usr/local/go/bin:${PATH}"
 
-RUN git clone https://github.com/pyenv/pyenv.git /root/.pyenv
+RUN git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
+
+ENV PYENV_ROOT="$HOME/.pyenv"
+ENV PATH="$PYENV_ROOT/bin:$PYENV_ROOT/shims:${PATH}"
 
 RUN pyenv install 3.11 && pyenv local 3.11 && pip install pre-commit pylint && \
     pyenv install 3.12 && pyenv local 3.12 && pip install pre-commit pylint && \
     pyenv install 3.13 && pyenv local 3.13 && pip install pre-commit pylint
+
+ENV NVM_DIR=$HOME/nvm
 
 RUN mkdir $NVM_DIR && \
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash && \
@@ -62,12 +79,18 @@ RUN mkdir $NVM_DIR && \
 
 RUN go version && pip --version && . $NVM_DIR/nvm.sh && node -v && npm -v
 
-WORKDIR /app
-COPY . .
+COPY --chown=appuser:appuser . .
 
 RUN . $NVM_DIR/nvm.sh && \
     npm install && \
     npm run tailwindcss:build && \
-    npm run build
+    npm run build && \
+    chown -R appuser:appuser /app && \
+    echo 'export NVM_DIR="$HOME/nvm"' >> /home/appuser/.bashrc && \
+    echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> /home/appuser/.bashrc
+
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD ["/bin/bash", "-c", ". $NVM_DIR/nvm.sh && pyenv local 3.13 && pre-commit --version"]
+
 
 CMD ["/bin/bash", "-c", ". $NVM_DIR/nvm.sh && pyenv local 3.13 && pre-commit run --all-files"]
