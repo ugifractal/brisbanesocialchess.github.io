@@ -8,7 +8,11 @@ version = 1
 name = "python"
 enabled = true
 version = "3.11"
-meta = { pylint_enabled = true, black_enabled = true, bandit_enabled = true }
+dependency_file_paths = ["requirements.txt", "requirements-docs.txt"]
+
+[[analyzers]]
+name = "bandit"
+enabled = true
 
 [[analyzers]]
 name = "javascript"
