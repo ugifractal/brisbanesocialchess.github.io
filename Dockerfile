@@ -61,9 +61,9 @@ RUN git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
 ENV PYENV_ROOT="$HOME/.pyenv"
 ENV PATH="$PYENV_ROOT/bin:$PYENV_ROOT/shims:${PATH}"
 
-RUN pyenv install 3.11 && pyenv local 3.11 && pip install pre-commit==4.3.0 pylint && \
-    pyenv install 3.12 && pyenv local 3.12 && pip install pre-commit==4.3.0 pylint && \
-    pyenv install 3.13 && pyenv local 3.13 && pip install pre-commit==4.3.0 pylint
+RUN pyenv install 3.11 && pyenv local 3.11 && pip install pre-commit==4.3.0 pylint==3.3.8 && \
+    pyenv install 3.12 && pyenv local 3.12 && pip install pre-commit==4.3.0 pylint==3.3.8 && \
+    pyenv install 3.13 && pyenv local 3.13 && pip install pre-commit==4.3.0 pylint==3.3.8
 
 ENV NVM_DIR=$HOME/nvm
 
