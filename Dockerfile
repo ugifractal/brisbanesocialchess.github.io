@@ -6,7 +6,6 @@ ENV GO_VERSION=1.24.5
 ENV NODE_VERSION=22.18.0
 ENV PYENV_ROOT="/root/.pyenv"
 ENV PATH="$PYENV_ROOT/bin:$PYENV_ROOT/shims:${PATH}"
-ENV NVM_DIR=/usr/local/nvm
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && apt install -y --no-install-recommends \

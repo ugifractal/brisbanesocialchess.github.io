@@ -11,15 +11,10 @@ version = "3.11"
 dependency_file_paths = ["requirements.txt", "requirements-docs.txt"]
 
 [[analyzers]]
-name = "bandit"
-enabled = true
-
-[[analyzers]]
 name = "javascript"
 enabled = true
-# Specify the version of JavaScript.
-# Default is 'es2018'.
 version = "es2022"
+environment = ["vitest", "browser", "nodejs"]
 
 [[analyzers]]
 name = "secrets"
@@ -54,7 +49,15 @@ enabled = true
 # enabled = true
 
 [[transformers]]
+name = "isort"
+enabled = true
+
+[[transformers]]
 name = "black"
+enabled = true
+
+[[transformers]]
+name = "prettier"
 enabled = true
 
 # To identify test files.
