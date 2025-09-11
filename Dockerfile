@@ -4,11 +4,9 @@ ARG TARGETARCH
 
 ENV GO_VERSION=1.24.5
 ENV NODE_VERSION=22.18.0
-ENV PYENV_ROOT="/root/.pyenv"
-ENV PATH="$PYENV_ROOT/bin:$PYENV_ROOT/shims:${PATH}"
 ENV DEBIAN_FRONTEND=noninteractive
-
-RUN apt update && apt install -y --no-install-recommends \
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     git \
     bash \
@@ -63,9 +61,9 @@ RUN git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
 ENV PYENV_ROOT="$HOME/.pyenv"
 ENV PATH="$PYENV_ROOT/bin:$PYENV_ROOT/shims:${PATH}"
 
-RUN pyenv install 3.11 && pyenv local 3.11 && pip install pre-commit pylint && \
-    pyenv install 3.12 && pyenv local 3.12 && pip install pre-commit pylint && \
-    pyenv install 3.13 && pyenv local 3.13 && pip install pre-commit pylint
+RUN pyenv install 3.11 && pyenv local 3.11 && pip install pre-commit==4.3.0 pylint && \
+    pyenv install 3.12 && pyenv local 3.12 && pip install pre-commit==4.3.0 pylint && \
+    pyenv install 3.13 && pyenv local 3.13 && pip install pre-commit==4.3.0 pylint
 
 ENV NVM_DIR=$HOME/nvm
 
