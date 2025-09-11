@@ -17,23 +17,29 @@ const includeJs = ['script.js'];
 const cssFiles = includeCss
 	.map((f) => path.relative(process.cwd(), path.join(cssDir, f)))
 	.filter((f) => fs.existsSync(f) && f !== mergedCssFile);
+const mergedCss = cssFiles.map((file) => fs.readFileSync(file, 'utf-8')).join('');
 
-const mergedCss = cssFiles.map((file) => fs.readFileSync(file, 'utf-8')).join('\n');
-
-if (cssFiles.length > 0) {
-	fs.writeFileSync(mergedCssFile, mergedCss.trim(), 'utf-8');
-}
+fs.writeFileSync(mergedCssFile, mergedCss.trim(), 'utf-8');
 
 // --- Merge JS ---
 const jsFiles = includeJs
 	.map((f) => path.relative(process.cwd(), path.join(jsDir, f)))
 	.filter((f) => fs.existsSync(f) && f !== mergedJsFile);
-
-const mergedJs = jsFiles.map((file) => fs.readFileSync(file, 'utf-8')).join('\n');
+const mergedJs = jsFiles.map((file) => fs.readFileSync(file, 'utf-8')).join('');
 
 fs.writeFileSync(mergedJsFile, mergedJs.trim(), 'utf-8');
 
 // --- Cleanup individual files ---
-[...cssFiles, ...jsFiles].forEach((file) => {
-	fs.unlinkSync(file);
+fs.readdirSync(cssDir).forEach((file) => {
+	const filePath = path.join(cssDir, file);
+	if (file !== path.basename(mergedCssFile) && fs.lstatSync(filePath).isFile()) {
+		fs.unlinkSync(filePath);
+	}
+});
+
+fs.readdirSync(jsDir).forEach((file) => {
+	const filePath = path.join(jsDir, file);
+	if (file !== path.basename(mergedJsFile) && fs.lstatSync(filePath).isFile()) {
+		fs.unlinkSync(filePath);
+	}
 });
