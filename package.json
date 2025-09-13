@@ -29,7 +29,10 @@
 		"useTabs": true,
 		"endOfLine": "lf"
 	},
-	"workspaces": [],
+	"workspaces": [
+		"packages/*",
+		"!packages/cfsite"
+	],
 	"dependencies": {
 		"@tailwindcss/cli": "^4.1.11",
 		"glob": "^11.0.3",
