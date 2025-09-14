@@ -12,32 +12,55 @@ const elmFormContact = document.querySelector('.form-contact');
 const elmEmailElements = document.querySelectorAll('.email-obfuscated');
 
 // Utilities
+/**
+ * Returns the current year as a number.
+ * @returns {number} The current year (e.g., 2025).
+ */
 function getCurrentYear() {
 	return new Date().getFullYear();
 }
 
+/**
+ * Displays an alert message with a list of validation errors.
+ * @param {string[]} errors - The list of error messages.
+ */
 function showAlert(errors) {
 	if (errors.length === 1) alert(`Please fix the error: ${errors.join(' ')}`);
 	else alert(`Please fix the following:\n- ${errors.join('\n- ')}`);
 }
 
+/**
+ * Validates whether the given email string is in a correct format.
+ * @param {string} email - The email address to validate.
+ * @returns {boolean} True if valid, otherwise false.
+ */
 function isValidEmail(email) {
 	const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
 	return regex.test(email);
 }
 
+/**
+ * Validates the registration form data.
+ * @param {Object} data - The registration form values.
+ * @param {string} data.firstName - User's first name.
+ * @param {string} data.lastName - User's last name.
+ * @param {string} data.birthYear - Birth year as a string.
+ * @param {string} data.gender - Gender selection.
+ * @param {string} data.email - User's email address.
+ * @returns {string[]} List of error messages.
+ */
 function validateRegisterForm(data) {
 	const errors = [];
 
 	const currentYear = getCurrentYear();
 
-	if (!data.firstName?.trim()) errors.push('First name is required.');
-	if (!data.lastName?.trim()) errors.push('Last name is required.');
+	if (!data.fname?.trim()) errors.push('First name is required.');
+	if (!data.lname?.trim()) errors.push('Last name is required.');
 
-	const year = data.birthYear ? parseInt(data.birthYear, 10) : NaN;
+	const year = data.birthyear ? parseInt(data.birthyear, 10) : NaN;
 	const age = currentYear - year;
 
-	if (!data.birthYear?.trim()) errors.push('Birth year is required.');
+	if (!data.birthyear?.trim()) errors.push('Birth year is required.');
 	else if (isNaN(year)) errors.push('Birth year must be a valid number.');
 	else if (age < MIN_AGE || age > MAX_AGE) errors.push(`Age must be between ${MIN_AGE} and ${MAX_AGE} years old.`);
 
@@ -47,6 +70,15 @@ function validateRegisterForm(data) {
 	return errors;
 }
 
+/**
+ * Validates the contact form data.
+ * @param {Object} data - The contact form values.
+ * @param {string} data.name - Name of the sender.
+ * @param {string} data.email - Email of the sender.
+ * @param {string} data.subject - Subject of the message.
+ * @param {string} data.message - The message text.
+ * @returns {string[]} List of error messages.
+ */
 function validateContactForm(data) {
 	const errors = [];
 
@@ -58,6 +90,12 @@ function validateContactForm(data) {
 	return errors;
 }
 
+/**
+ * Handles form submission by validating and sending data to the server.
+ * @param {HTMLFormElement} form - The form element to handle.
+ * @param {string} endpoint - The API endpoint URL.
+ * @param {(data: Object) => string[]} validateFn - The validation function.
+ */
 async function handleFormSubmit(form, endpoint, validateFn) {
 	const formData = new FormData(form);
 	const data = Object.fromEntries(formData.entries());
