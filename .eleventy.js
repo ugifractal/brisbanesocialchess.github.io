@@ -15,7 +15,7 @@ const bundleCSS = () => {
 	for (const file of files) {
 		const filePath = path.join(cssDir, file);
 		if (fs.existsSync(filePath)) {
-			bundle += `/* ${file} */\n` + fs.readFileSync(filePath, 'utf8') + '\n';
+			bundle += `/* ${file} */\n${fs.readFileSync(filePath, 'utf8')}\n`;
 		}
 	}
 
@@ -33,7 +33,7 @@ const bundleJS = () => {
 	for (const file of files) {
 		const filePath = path.join(jsDir, file);
 		if (fs.existsSync(filePath)) {
-			bundle += `// ${file}\n` + fs.readFileSync(filePath, 'utf8') + '\n';
+			bundle += `// ${file}\n${fs.readFileSync(filePath, 'utf8')}\n`;
 		}
 	}
 
