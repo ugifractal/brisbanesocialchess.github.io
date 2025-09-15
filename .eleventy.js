@@ -143,9 +143,6 @@ export default function (eleventyConfig) {
 		if (changedFiles.some((f) => f.endsWith('.css') && f.includes('frontend/assets/styles'))) {
 			bundleCSS();
 		}
-	});
-
-	eleventyConfig.on('beforeWatch', (changedFiles) => {
 		if (changedFiles.some((f) => f.endsWith('.js') && f.includes('frontend/assets/scripts'))) {
 			bundleJS();
 		}
