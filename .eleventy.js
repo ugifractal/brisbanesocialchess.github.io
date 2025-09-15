@@ -9,7 +9,7 @@ const BASE_OUTPUT = '_site';
 
 /*
  * Bundle css files to single bundle.css
-*/
+ */
 const bundleCSS = () => {
 	const cssDir = './frontend/assets/styles';
 	const files = ['custom.css', 'gh-fork-ribbon.css', 'tailwind.css'];
@@ -30,7 +30,7 @@ const bundleCSS = () => {
 
 /*
  * Bundle js files to single bundle.js
-*/
+ */
 const bundleJS = () => {
 	const jsDir = './frontend/assets/scripts';
 	const files = ['script.js'];
