@@ -23,7 +23,6 @@ const bundleCSS = () => {
 	if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 	fs.writeFileSync(path.join(outDir, 'bundle.css'), bundle);
-	console.log(`✅ CSS bundled to bundle.css`);
 };
 
 const bundleJS = () => {
@@ -42,7 +41,6 @@ const bundleJS = () => {
 	if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
 	fs.writeFileSync(path.join(outDir, 'bundle.js'), bundle);
-	console.log('✅ JS bundled to bundle.js');
 };
 
 /**
