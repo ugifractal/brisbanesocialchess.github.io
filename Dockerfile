@@ -76,10 +76,11 @@ RUN mkdir $NVM_DIR && \
 
 RUN go version && pip --version && . $NVM_DIR/nvm.sh && node -v && npm -v
 
+COPY --chown=appuser:appuser package.json package-lock.json ./
+RUN . $NVM_DIR/nvm.sh && npm install
 COPY --chown=appuser:appuser . .
 
 RUN . $NVM_DIR/nvm.sh && \
-    npm install && \
     npm run tailwindcss:build && \
     npm run build && \
     chown -R appuser:appuser /app && \
