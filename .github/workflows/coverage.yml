@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@08c6903
         with:
           fetch-depth: 2
       - name: Set up Node
-        uses: actions/setup-node@v5.0.0
+        uses: actions/setup-node@a0853c2
       - name: Install dependencies
         run: npm install
       - name: Run tests
@@ -29,6 +29,6 @@ jobs:
         run: npm run coverage
         working-directory: ./packages/cfsite
       - name: Upload results to Codecov
-        uses: codecov/codecov-action@v5.5.1
+        uses: codecov/codecov-action@5a10915
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
