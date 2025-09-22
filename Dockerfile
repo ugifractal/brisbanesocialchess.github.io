@@ -83,8 +83,8 @@ RUN . $NVM_DIR/nvm.sh && \
     npm run tailwindcss:build && \
     npm run build && \
     chown -R appuser:appuser /app && \
-    echo 'export NVM_DIR="$HOME/nvm"' >> /home/appuser/.bashrc && \
-    echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> /home/appuser/.bashrc
+    echo "export NVM_DIR=\"$HOME/nvm\"" >> /home/appuser/.bashrc && \
+    echo "[ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\"" >> /home/appuser/.bashrc
 
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD ["/bin/bash", "-c", ". $NVM_DIR/nvm.sh && pyenv local 3.13 && pre-commit --version"]
