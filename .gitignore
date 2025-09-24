@@ -23,7 +23,7 @@ Thumbs.db
 
 # Build output
 dist/
-assets/
+/assets/
 
 build/
 .wrangler
