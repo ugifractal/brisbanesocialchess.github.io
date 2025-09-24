@@ -173,7 +173,7 @@ npm run start
 ```bash
 mkdir docker_data
 docker buildx build --platform=linux/arm64 -t ubuntu-pre-commit .
-docker run --platform=linux/arm64 -it -v "$PWD":/app -v "$PWD/docker_data/.cache/pre-commit":/root/.cache/pre-commit -v "$PWD/docker_data/.npm":/root/.npm -w /app ubuntu-pre-commit:latest bash
+docker run --platform=linux/arm64 -it -v "$PWD":/app -v "$PWD/docker_data/.cache/pre-commit":/home/appuser/.cache/pre-commit -v "$PWD/docker_data/.npm":/home/appuser/.npm -w /app ubuntu-pre-commit:latest bash
 pre-commit run --all-files
 ```
 
@@ -182,7 +182,7 @@ pre-commit run --all-files
 ```bash
 mkdir docker_data
 docker buildx build --platform=linux/amd64 -t ubuntu-pre-commit .
-docker run --platform=linux/amd64 -it -v "$PWD":/app -v "$PWD/docker_data/.cache/pre-commit":/root/.cache/pre-commit -v "$PWD/docker_data/.npm":/root/.npm -w /app ubuntu-pre-commit:latest bash
+docker run --platform=linux/amd64 -it -v "$PWD":/app -v "$PWD/docker_data/.cache/pre-commit":/home/appuser/.cache/pre-commit -v "$PWD/docker_data/.npm":/home/appuser/.npm -w /app ubuntu-pre-commit:latest bash
 pre-commit run --all-files
 ```
 
