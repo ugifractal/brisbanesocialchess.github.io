@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libstdc++6 && \
     rm -rf /var/lib/apt/lists/*
 
-RUN curl -LO https://mirrors.aliyun.com/golang/go${GO_VERSION}.linux-${TARGETARCH}.tar.gz && \
+RUN curl -LO https://go.dev/dl/go${GO_VERSION}.linux-${TARGETARCH}.tar.gz && \
     tar -C /usr/local -xzf go${GO_VERSION}.linux-${TARGETARCH}.tar.gz && \
     rm go${GO_VERSION}.linux-${TARGETARCH}.tar.gz
 
@@ -76,13 +76,13 @@ RUN mkdir $NVM_DIR && \
 
 RUN go version && pip --version && . $NVM_DIR/nvm.sh && node -v && npm -v
 
+COPY --chown=appuser:appuser package.json package-lock.json ./
+RUN . $NVM_DIR/nvm.sh && npm install
 COPY --chown=appuser:appuser . .
 
 RUN . $NVM_DIR/nvm.sh && \
-    npm install && \
     npm run tailwindcss:build && \
     npm run build && \
-    chown -R appuser:appuser /app && \
     echo "export NVM_DIR=\"$HOME/nvm\"" >> /home/appuser/.bashrc && \
     echo "[ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\"" >> /home/appuser/.bashrc
 
