@@ -26,10 +26,4 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PYTHON_PYLINT_CONFIG_FILE: .pylintrc
-          VALIDATE_CSS: true
-          # VALIDATE_JSCPD on Mac M2 always hang, seem `parallel` problem / bug
-          # VALIDATE_JSCPD: false
-          VALIDATE_MARKDOWN: true
-          VALIDATE_YAML: true
-          VALIDATE_PYTHON: true
-          VALIDATE_PYTHON_FLAKE8: true
+          VALIDATE_ALL_CODEBASE: true
